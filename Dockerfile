@@ -9,6 +9,8 @@ RUN npm install -g bower grunt grunt-cli
 RUN apt-get update -y && apt-get install -y ruby ruby-dev build-essential && \
     gem install compass
 
+ADD init_grunt.sh /
+
 USER nonrootuser
 
-CMD ["grunt", "serve"]
+CMD ["/init_grunt.sh"]

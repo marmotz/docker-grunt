@@ -1,7 +1,7 @@
 marmotz/grunt
 =============
 
-A simple grunt container with ports 9000 and 35729 for livereload
+A simple grunt container
 
 installed:
 
